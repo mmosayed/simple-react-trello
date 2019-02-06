@@ -1,25 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Bucket from './containers/bucket';
+
+const inProgress = [
+  {
+    title: 'Create Facebook marketing page',
+    tags: [{type: 'Marketing', color: 'blue'}, {type: 'Errand', color: 'green'}]
+  },
+  {
+    title: 'Develop website',
+    tags: [{type: 'Development', color: 'red'}]
+  },
+  {
+    title: 'Hire backend engineer',
+    tags: [{type: 'Errand', color: 'green'}, {type: 'Admin', color: 'purple'}]
+  }
+]
+
+const done = [
+  {
+    title: 'File for Incorporation',
+    tags: [{type: 'Legal', color: 'black'}]
+  }
+]
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Bucket cards={inProgress} />
+        <Bucket cards={done} />
+        <Bucket cards={inProgress} />
+        <Bucket cards={inProgress} />
+
       </div>
     );
   }

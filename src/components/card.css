@@ -1,0 +1,10 @@
+.task {
+  background-color: white;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.task-title {
+  font-size: 90%;
+}

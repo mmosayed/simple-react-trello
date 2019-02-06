@@ -1,0 +1,9 @@
+.bucket {
+  background-color: #E4EFF4;
+  min-width: 250px;
+  max-width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  float: left;
+}
